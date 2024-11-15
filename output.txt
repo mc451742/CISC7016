@@ -1,0 +1,51 @@
+example:
+Accuracy of the network on the 10000 test images: 60 %
+Accuracy for class: plane is 61.6 %
+Accuracy for class: car   is 78.6 %
+Accuracy for class: bird  is 39.2 %
+Accuracy for class: cat   is 56.2 %
+Accuracy for class: deer  is 54.8 %
+Accuracy for class: dog   is 37.2 %
+Accuracy for class: frog  is 62.5 %
+Accuracy for class: horse is 68.2 %
+Accuracy for class: ship  is 75.6 %
+Accuracy for class: truck is 66.2 %
+
+transfer learning:
+Accuracy of the network on the 10000 test images: 81.08 %
+Accuracy for class: plane is 87.2 %
+Accuracy for class: car   is 88.2 %
+Accuracy for class: bird  is 74.5 %
+Accuracy for class: cat   is 62.7 %
+Accuracy for class: deer  is 83.9 %
+Accuracy for class: dog   is 68.8 %
+Accuracy for class: frog  is 87.8 %
+Accuracy for class: horse is 81.8 %
+Accuracy for class: ship  is 86.6 %
+Accuracy for class: truck is 89.3 %
+
+cnn:
+Accuracy of the network on the 10000 test images: 75.04 %
+Accuracy for class: plane is 77.1 %
+Accuracy for class: car   is 89.0 %
+Accuracy for class: bird  is 55.5 %
+Accuracy for class: cat   is 63.8 %
+Accuracy for class: deer  is 77.9 %
+Accuracy for class: dog   is 55.0 %
+Accuracy for class: frog  is 80.1 %
+Accuracy for class: horse is 79.1 %
+Accuracy for class: ship  is 86.3 %
+Accuracy for class: truck is 82.5 %
+
+mlp:
+Accuracy of the network on the 10000 test images: 25.66 %
+Accuracy for class: plane is 32.8 %
+Accuracy for class: car   is 22.7 %
+Accuracy for class: bird  is 10.1 %
+Accuracy for class: cat   is 12.5 %
+Accuracy for class: deer  is 12.0 %
+Accuracy for class: dog   is 20.2 %
+Accuracy for class: frog  is 36.6 %
+Accuracy for class: horse is 33.7 %
+Accuracy for class: ship  is 40.3 %
+Accuracy for class: truck is 33.3 %
