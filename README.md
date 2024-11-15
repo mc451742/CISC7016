@@ -15,16 +15,18 @@ Title: A Comparative Study of Multi-layer Perceptron, Convolutional Neural Netwo
 
 Abstract:
 
+To visualize the architectures and model structures, please see below:
+
 The architecture of multi-layer perceptron (MLP):
 
-![MLP][https://github.com/mc451742/CISC7016/blob/main/figure/mlp.PNG]
+![MLP](/figure/mlp.PNG?raw=true "MLP")
 
-![MLP_Layer][https://github.com/mc451742/CISC7016/blob/main/figure/mlp_layer.PNG]
+![MLP_Layer](/figure/mlp_layer.PNG?raw=true "MLP_Layer")
 
 The architecture of convolutional neural network (CNN):
 
-![CNN][https://github.com/mc451742/CISC7016/blob/main/figure/cnn.PNG]
+![CNN](/figure/cnn.PNG?raw=true "CNN")
 
 The architecture of transfer learning:
 
-![Transfer Learning][https://github.com/mc451742/CISC7016/blob/main/figure/transfer.PNG]
+![Transfer Learning](/figure/transfer.PNG?raw=true "Transfer Learning")
