@@ -13,7 +13,7 @@ import torchvision
 import torchvision.transforms as transforms
 import matplotlib.pyplot as plt
 
-def main():
+def main_tl():
     # data augmentation and normalization (add cutout)
     transform_train = transforms.Compose([
         transforms.RandomCrop(32, padding=4),
@@ -72,8 +72,8 @@ def main():
 
     print(model) # print out the structure of model
 
-    training_loss_list = []
-    testing_loss_list = []
+    tl_training_loss_list = []
+    tl_testing_loss_list = []
 
     num_epochs = 36
     for epoch in range(num_epochs):
@@ -94,8 +94,8 @@ def main():
             # correct += (predicted == labels).sum().item()
         epoch_train_loss = training_loss / len(trainloader)
         # epoch_acc = correct / total * 100
-        training_loss_list.append(epoch_train_loss)
-        print(f"epoch [{epoch+1}/{num_epochs}], training loss: {epoch_train_loss:.4f}")
+        tl_training_loss_list.append(epoch_train_loss)
+        print(f"epoch [{epoch+1}/{num_epochs}], train loss: {epoch_train_loss:.4f}")
         # print(f"Epoch [{epoch+1}/{num_epochs}], Loss: {epoch_loss:.4f}, Accuracy: {epoch_acc:.2f}%")
         scheduler.step()
         model.eval()
@@ -106,8 +106,8 @@ def main():
             loss = criterion(outputs, labels)
             testing_loss += loss.item()
         epoch_test_loss = testing_loss / len(testloader)
-        testing_loss_list.append(epoch_test_loss)
-        print(f"epoch [{epoch+1}/{num_epochs}], testing loss: {epoch_test_loss:.4f}")
+        tl_testing_loss_list.append(epoch_test_loss)
+        print(f"epoch [{epoch+1}/{num_epochs}], test loss: {epoch_test_loss:.4f}")
 
     # save model
     PATH = './path/cifar_transfer_learning.pth'
@@ -155,29 +155,37 @@ def main():
         accuracy = 100 * float(correct_count) / total_pred[classname]
         print(f'Accuracy for class: {classname:5s} is {accuracy:.1f} %')
 
+    """
     # load epoch round from 1 to 36 (from 0 to 35)
-        x = []
-        for i in range(36):
-            x.append(i + 1)
+    # x = []
+    # for i in range(36):
+    #     x.append(i + 1)
+    x = list(range(1, 37))
 
-        # transfer learning
-        y1 = training_loss_list
-        y2 = testing_loss_list
-        # add lines
-        plt.plot(x, y1, marker='o', linestyle='-', color='b', label='train loss')
-        plt.plot(x, y2, marker='s', linestyle='--', color='r', label='test loss')
-        # add labels and title
-        plt.xlabel('epoch')
-        plt.ylabel('loss')
-        plt.title('Loss of Transfer Learning')
-        # add grid and legend
-        plt.grid(True)
-        plt.legend()
-        # save the plot as an image file
-        plt.savefig('transfer_learning_loss.png') # save as PNG
-        plt.savefig('transfer_learning_loss.pdf') # to save as PDF, use this instead
-        # show the plot
-        # plt.show()
+    # transfer learning
+    y1 = training_loss_list
+    y2 = testing_loss_list
+    # create a new figure
+    plt.figure()
+    # add lines
+    plt.plot(x, y1, marker='o', linestyle='-', color='b', label='train loss')
+    plt.plot(x, y2, marker='s', linestyle='--', color='r', label='test loss')
+    # add labels and title
+    plt.xlabel('epoch')
+    plt.ylabel('loss')
+    plt.title('Loss of Transfer Learning')
+    # add grid and legend
+    plt.grid(True)
+    # put the legends in the best place automatically
+    plt.legend(loc='best')
+    # save the plot as an image file
+    plt.savefig('transfer_learning_loss.png') # save as PNG
+    plt.savefig('transfer_learning_loss.pdf') # to save as PDF, use this instead
+    # show the plot
+    # plt.show()
+    """
+
+    return tl_training_loss_list, tl_testing_loss_list
 
 if __name__ == "__main__":
-    main()
+    _, _ = main_tl()

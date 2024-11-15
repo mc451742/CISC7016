@@ -17,14 +17,14 @@ Abstract:
 
 The architecture of multi-layer perceptron (MLP):
 
-![MLP][./figure/mlp.PNG]
+![MLP][https://github.com/mc451742/CISC7016/blob/main/figure/mlp.PNG]
 
-![MLP_Layer][./figure/mlp_layer.PNG]
+![MLP_Layer][https://github.com/mc451742/CISC7016/blob/main/figure/mlp_layer.PNG]
 
 The architecture of convolutional neural network (CNN):
 
-![CNN][./figure/cnn.PNG]
+![CNN][https://github.com/mc451742/CISC7016/blob/main/figure/cnn.PNG]
 
 The architecture of transfer learning:
 
-![Transfer Learning][./figure/transfer.PNG]
+![Transfer Learning][https://github.com/mc451742/CISC7016/blob/main/figure/transfer.PNG]

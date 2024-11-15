@@ -126,7 +126,8 @@ def main_mlp():
     mlp_testing_loss_list = []
 
     # main loop
-    for epoch in range(36): # loop over the dataset multiple times
+    num_epochs = 18
+    for epoch in range(num_epochs): # loop over the dataset multiple times
         net.train() # set model into training mode
         # training loop
         training_loss = 0.0
@@ -145,7 +146,7 @@ def main_mlp():
             training_loss += loss.item()
         epoch_training_loss = training_loss / len(trainloader)
         mlp_training_loss_list.append(epoch_training_loss)
-        print(f"epoch {epoch+1}/{36}, training loss: {epoch_training_loss:.4f}")
+        print(f"epoch [{epoch+1}/{num_epochs}], train loss: {epoch_training_loss:.4f}")
         net.eval() # set model into evaluation mode
         # testing loop
         testing_loss = 0.0
@@ -161,7 +162,7 @@ def main_mlp():
                 testing_loss += loss.item()
             epoch_testing_loss = testing_loss / len(testloader)
             mlp_testing_loss_list.append(epoch_testing_loss)
-            print(f"epoch {epoch+1}/{36}, testing loss: {epoch_testing_loss:.4f}")
+            print(f"epoch [{epoch+1}/{num_epochs}], test loss: {epoch_testing_loss:.4f}")
 
     # print('Finished Training')
 
