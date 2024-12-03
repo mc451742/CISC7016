@@ -13,6 +13,8 @@ Hardware specification: AMD Ryzen 7 6800H with Radeon Graphics CPU (16 GB) & NVI
 
 Title: A Comparative Study of Multi-layer Perceptron, Convolutional Neural Network, and Transfer Learning Architectures for CIFAR-10 Image Classification
 
+Abstract: This report explores image classification methods using Deep Learning (DL) on the CIFAR-10 dataset, focusing on three architectures: Multi-layer Perceptron (MLP), Convolutional Neural Network (CNN), and Transfer Learning (TL). Customized models based on these architectures are proposed, implemented, and evaluated. The report concludes with experimental results and a comparative analysis of the model's performance.
+
 The architecture of multi-layer perceptron (MLP):
 
 ![MLP](/figure/mlp.PNG?raw=true "MLP")
@@ -23,11 +25,11 @@ The architecture of convolutional neural network (CNN):
 
 ![CNN](/figure/cnn.PNG?raw=true "CNN")
 
-The architecture of transfer learning:
+The architecture of transfer learning (TL):
 
 ![Transfer Learning](/figure/transfer.PNG?raw=true "Transfer Learning")
 
-If you want to reproduce the experiments, please execute the following commands step by step:
+If you want to reproduce the experiments, please ensure your environment has been configured correctly and execute the following commands step by step:
 
 ```bash
 chmod +x script.sh
