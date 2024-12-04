@@ -41,6 +41,6 @@ chmod +x script.sh
 
 Contributor:
 
-Yumu Xie (MC451742) mc45174@um.edu.mo
+[Yumu Xie](https://github.com/mc451742) (MC451742) mc45174@um.edu.mo
 
 Department of Computer and Information Science, Faculty of Science and Technology, University of Macau
