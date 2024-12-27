@@ -9,7 +9,7 @@ Programming environment: WSL Linux Sub-system of Windows (Debian) & Anaconda
 
 Python version: 3.10.15
 
-Hardware specification: AMD Ryzen 7 6800H with Radeon Graphics CPU (16 GB) & NVIDIA GeForce RTX 3050 Ti GPU
+Hardware specification: AMD Ryzen 7 6800H with Radeon Graphics CPU (16 GB) & NVIDIA GeForce RTX 3050 Ti GPU (4 GB)
 
 Title: A Comparative Study of Multi-layer Perceptron, Convolutional Neural Network, and Transfer Learning Architectures for CIFAR-10 Image Classification
 
